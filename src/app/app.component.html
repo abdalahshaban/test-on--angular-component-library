@@ -1,0 +1,14 @@
+<library-overlay-loader [overlayStyle]="overlayStyle" [spinnerSize]="spinnerSize" [isVisible]="isLoading">
+
+  <app-dashboard-layout [configuration]="configuration">
+    <div container="sidePanel">
+      <app-navigation-side-panel [links]="links"></app-navigation-side-panel>
+    </div>
+    <div container="navigationBar">
+      <app-navigation-bar></app-navigation-bar>
+    </div>
+    <div container="mainContent">
+      <router-outlet></router-outlet>
+    </div>
+  </app-dashboard-layout>
+</library-overlay-loader>
